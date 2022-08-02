@@ -1,4 +1,4 @@
-package org.reggy93.design_patterns.strategy.util;
+package org.reggy93.design_pattenrs.strategy.util;
 
 import java.util.Arrays;
 import java.util.function.Supplier;

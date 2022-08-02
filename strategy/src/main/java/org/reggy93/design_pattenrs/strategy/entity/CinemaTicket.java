@@ -1,7 +1,7 @@
-package org.reggy93.design_patterns.strategy.entity;
+package org.reggy93.design_pattenrs.strategy.entity;
 
-import org.reggy93.design_patterns.strategy.behaviour.state.TicketStateIdentificationBehaviour;
-import org.reggy93.design_patterns.strategy.behaviour.validation.TicketValidationBehaviour;
+import org.reggy93.design_pattenrs.strategy.behaviour.state.TicketStateIdentificationBehaviour;
+import org.reggy93.design_pattenrs.strategy.behaviour.validation.TicketValidationBehaviour;
 
 import java.math.BigDecimal;
 import java.util.logging.Logger;

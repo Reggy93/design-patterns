@@ -1,15 +1,16 @@
-package org.reggy93.design_patterns.strategy;
+package org.reggy93.design_pattenrs.common;
 
-import org.reggy93.design_patterns.strategy.behaviour.state.PaperStateTicketBehaviour;
-import org.reggy93.design_patterns.strategy.behaviour.state.TicketStateIdentificationBehaviour;
-import org.reggy93.design_patterns.strategy.behaviour.state.VirtualStateTicketBehaviour;
-import org.reggy93.design_patterns.strategy.behaviour.validation.TicketDataOnTicketValidationBehaviour;
-import org.reggy93.design_patterns.strategy.behaviour.validation.TicketQrCodeValidationBehaviour;
-import org.reggy93.design_patterns.strategy.behaviour.validation.TicketValidationBehaviour;
-import org.reggy93.design_patterns.strategy.entity.CinemaTicket;
-import org.reggy93.design_patterns.strategy.entity.EventTicket;
-import org.reggy93.design_patterns.strategy.entity.Ticket;
-import org.reggy93.design_patterns.strategy.entity.TransportTicket;
+
+import org.reggy93.design_pattenrs.strategy.behaviour.state.PaperStateTicketBehaviour;
+import org.reggy93.design_pattenrs.strategy.behaviour.state.TicketStateIdentificationBehaviour;
+import org.reggy93.design_pattenrs.strategy.behaviour.state.VirtualStateTicketBehaviour;
+import org.reggy93.design_pattenrs.strategy.behaviour.validation.TicketDataOnTicketValidationBehaviour;
+import org.reggy93.design_pattenrs.strategy.behaviour.validation.TicketQrCodeValidationBehaviour;
+import org.reggy93.design_pattenrs.strategy.behaviour.validation.TicketValidationBehaviour;
+import org.reggy93.design_pattenrs.strategy.entity.CinemaTicket;
+import org.reggy93.design_pattenrs.strategy.entity.EventTicket;
+import org.reggy93.design_pattenrs.strategy.entity.Ticket;
+import org.reggy93.design_pattenrs.strategy.entity.TransportTicket;
 
 import java.math.BigDecimal;
 
