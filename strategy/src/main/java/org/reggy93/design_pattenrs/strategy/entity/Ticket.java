@@ -8,6 +8,9 @@ import java.util.logging.Logger;
 
 import static org.reggy93.design_pattenrs.strategy.util.MessageLoggerUtil.logMessage;
 
+/**
+ * Abstract template class for all tickets.
+ */
 public abstract class Ticket {
 
   private static final Logger LOG = Logger.getLogger("TicketLogger");

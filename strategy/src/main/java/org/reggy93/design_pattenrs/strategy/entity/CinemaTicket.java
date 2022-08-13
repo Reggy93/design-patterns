@@ -6,6 +6,9 @@ import org.reggy93.design_pattenrs.strategy.behaviour.validation.TicketValidatio
 import java.math.BigDecimal;
 import java.util.logging.Logger;
 
+/**
+ * Represents cinema ticket.
+ */
 public class CinemaTicket extends Ticket {
 
   private static final Logger LOG = Logger.getLogger("CinemaTicketLogger");
