@@ -1,41 +1,34 @@
 package org.reggy93.design_pattenrs.common;
 
 
-import org.reggy93.design_pattenrs.strategy.behaviour.state.PaperStateTicketBehaviour;
-import org.reggy93.design_pattenrs.strategy.behaviour.state.TicketStateIdentificationBehaviour;
-import org.reggy93.design_pattenrs.strategy.behaviour.state.VirtualStateTicketBehaviour;
-import org.reggy93.design_pattenrs.strategy.behaviour.validation.TicketDataOnTicketValidationBehaviour;
-import org.reggy93.design_pattenrs.strategy.behaviour.validation.TicketQrCodeValidationBehaviour;
-import org.reggy93.design_pattenrs.strategy.behaviour.validation.TicketValidationBehaviour;
-import org.reggy93.design_pattenrs.strategy.entity.CinemaTicket;
-import org.reggy93.design_pattenrs.strategy.entity.EventTicket;
-import org.reggy93.design_pattenrs.strategy.entity.Ticket;
-import org.reggy93.design_pattenrs.strategy.entity.TransportTicket;
+import org.reggy93.design_pattenrs.common.registry.DefaultDesignPatternTypeServiceMapper;
+import org.reggy93.design_pattenrs.common.registry.DesignPatternTypeServiceMapper;
+import org.reggy93.design_pattenrs.common.service.execution.DefaultDesignPatternExecutionService;
+import org.reggy93.design_pattenrs.common.service.execution.DesignPatternExecutionService;
+import org.reggy93.design_pattenrs.common.util.DesignPatternType;
 
-import java.math.BigDecimal;
+import java.util.logging.Logger;
 
 public class Main {
 
-  public static void main(String[] args) {
+    private static final Logger LOG = Logger.getLogger("MainLogger");
 
-    final TicketStateIdentificationBehaviour paperTicket = new PaperStateTicketBehaviour();
-    final TicketStateIdentificationBehaviour virtualTicket = new VirtualStateTicketBehaviour();
+    public static void main(String[] args) {
 
-    final TicketValidationBehaviour qrCodeValidation = new TicketQrCodeValidationBehaviour();
-    final TicketValidationBehaviour dataOnTicket = new TicketDataOnTicketValidationBehaviour();
+        final String chosenDesignPattern = args[0];
 
-    final Ticket cinemaTicket = new CinemaTicket(BigDecimal.TEN, virtualTicket, qrCodeValidation);
-    displayTicketInformation(cinemaTicket);
+        LOG.info(() -> String.format("%s [%s]", "Trying to execute logic for passed design pattern:", chosenDesignPattern));
 
-    final Ticket transportTicket = new TransportTicket(BigDecimal.ONE, paperTicket, dataOnTicket);
-    displayTicketInformation(transportTicket);
+        final DesignPatternTypeServiceMapper designPatternTypeServiceMapper = new DefaultDesignPatternTypeServiceMapper();
+        final DesignPatternExecutionService designPatternExecutionService =
+                new DefaultDesignPatternExecutionService(designPatternTypeServiceMapper);
 
-    final Ticket eventTicket = new EventTicket(new BigDecimal(150), paperTicket, qrCodeValidation);
-    displayTicketInformation(eventTicket);
-  }
+        try {
+            designPatternExecutionService.executeDesignPatternLogic(DesignPatternType.fromString(chosenDesignPattern));
+        } catch (IllegalArgumentException e) {
+            LOG.severe("Cannot execute logic because of root case: " + e);
+        }
+    }
 
-  private static void displayTicketInformation(final Ticket ticket) {
-    ticket.displayTicketTypeShortDescription();
-    ticket.displayTicketDescription();
-  }
+
 }
