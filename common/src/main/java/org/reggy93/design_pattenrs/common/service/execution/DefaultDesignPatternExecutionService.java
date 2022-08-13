@@ -15,6 +15,9 @@ public class DefaultDesignPatternExecutionService implements DesignPatternExecut
         this.designPatternTypeServiceMapper = designPatternTypeServiceMapper;
     }
 
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public void executeDesignPatternLogic(DesignPatternType designPatternType) {
         designPatternTypeServiceMapper.retrieveMappedDesignPattern(designPatternType)
