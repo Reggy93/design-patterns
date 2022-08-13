@@ -13,6 +13,7 @@
     <modules>
         <module>strategy</module>
         <module>common</module>
+        <module>observer</module>
     </modules>
 
     <properties>
