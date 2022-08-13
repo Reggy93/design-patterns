@@ -4,6 +4,10 @@ import org.reggy93.design_patterns.observer.subject.Subject;
 
 import java.util.logging.Logger;
 
+/**
+ * Implementation of {@link DisplayObserver} for next day weather forecast display - allow displaying next day
+ * weather forecast.
+ */
 public class NextDayForecastDisplay implements DisplayObserver {
 
     private static final Logger LOG = Logger.getLogger("NextDayForecastDisplayLogger");

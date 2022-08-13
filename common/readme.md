@@ -26,4 +26,4 @@ This directory reflects already implemented design patterns and contains dedicat
 
 #### execution
 
-Entry point for `Main` class to execute a chosen design pattern logic. 
+Entry point for `Main` class to execute chosen design pattern logic. 

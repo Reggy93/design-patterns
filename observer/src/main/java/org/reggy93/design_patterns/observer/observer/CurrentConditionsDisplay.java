@@ -4,6 +4,10 @@ import org.reggy93.design_patterns.observer.subject.Subject;
 
 import java.util.logging.Logger;
 
+/**
+ * Implementation of {@link DisplayObserver} for current conditions display. Allows displaying temperature, humidity
+ * and pressure.
+ */
 public class CurrentConditionsDisplay implements DisplayObserver {
 
     private static final Logger LOG = Logger.getLogger("CurrentConditionsDisplayLogger");
