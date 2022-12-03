@@ -10,7 +10,7 @@ Strategy pattern helps to disjoint dynamic behaviour from particular objects its
 
 ## Structure
 
-There directories like:
+There are directories like:
 
 - `behaviour` - groups different type of strategies
     - `state` - for ticket state

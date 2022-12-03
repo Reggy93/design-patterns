@@ -22,3 +22,9 @@ Clients are demanding, and they almost always want to have a personalized board,
 All above decorations can be used as multiple.
 Each skateboard type has its own price, as well as every particular decoration also has its price.
 The task is to create a configurator application that will sum up the total cost of configured skateboard.
+
+## Structure
+
+There are directories like:
+- `entity` - contains all the entities — skateboard types
+- `configurator` - contains all enhancers (decorators)

@@ -8,7 +8,9 @@ import org.apache.commons.lang3.StringUtils;
 public enum DesignPatternType {
 
     OBSERVER("observer"),
-    STRATEGY("strategy");
+    STRATEGY("strategy"),
+
+    DECORATOR("decorator");
 
     private final String value;
 
