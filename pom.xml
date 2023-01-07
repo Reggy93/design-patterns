@@ -15,6 +15,7 @@
         <module>common</module>
         <module>observer</module>
         <module>decorator</module>
+        <module>factory</module>
     </modules>
 
     <properties>
