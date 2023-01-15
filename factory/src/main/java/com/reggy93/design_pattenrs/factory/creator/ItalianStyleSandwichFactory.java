@@ -8,6 +8,9 @@ import com.reggy93.design_pattenrs.factory.product.italy.ItalianStyleVeggieSandw
 
 import java.util.logging.Logger;
 
+/**
+ * Factory for creating sandwiches in italian style.
+ */
 public class ItalianStyleSandwichFactory extends SandwichFactory {
 
     private static final Logger LOG = Logger.getLogger("ItalianStyleSandwichFactory logger");

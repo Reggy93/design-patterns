@@ -2,6 +2,9 @@ package com.reggy93.design_pattenrs.factory.product.poland;
 
 import com.reggy93.design_pattenrs.factory.product.Sandwich;
 
+/**
+ * Represents product - polish type veggie sandwich.
+ */
 public class PolishStyleVeggieSandwich extends Sandwich {
 
     public PolishStyleVeggieSandwich() {

@@ -10,7 +10,9 @@ public enum DesignPatternType {
     OBSERVER("observer"),
     STRATEGY("strategy"),
 
-    DECORATOR("decorator");
+    DECORATOR("decorator"),
+
+    FACTORY("factory");
 
     private final String value;
 

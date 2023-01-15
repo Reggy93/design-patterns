@@ -2,6 +2,9 @@ package com.reggy93.design_pattenrs.factory.product.austria;
 
 import com.reggy93.design_pattenrs.factory.product.Sandwich;
 
+/**
+ * Represents product - austrian type meat sandwich.
+ */
 public class AustrianStyleMeatSandwich extends Sandwich {
 
     public AustrianStyleMeatSandwich() {

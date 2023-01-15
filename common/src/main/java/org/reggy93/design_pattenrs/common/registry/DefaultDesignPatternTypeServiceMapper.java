@@ -2,6 +2,7 @@ package org.reggy93.design_pattenrs.common.registry;
 
 import org.reggy93.design_pattenrs.common.service.design_pattern.DesignPatternService;
 import org.reggy93.design_pattenrs.common.service.design_pattern.decorator.DecoratorDesignPatternService;
+import org.reggy93.design_pattenrs.common.service.design_pattern.factory.FactoryDesignPatternService;
 import org.reggy93.design_pattenrs.common.service.design_pattern.observer.ObserverDesignPatternService;
 import org.reggy93.design_pattenrs.common.service.design_pattern.strategy.StrategyDesignPatternService;
 import org.reggy93.design_pattenrs.common.util.DesignPatternType;
@@ -24,6 +25,7 @@ public class DefaultDesignPatternTypeServiceMapper implements DesignPatternTypeS
         DESIGN_PATTERN_SERVICE_MAP.put(OBSERVER, new ObserverDesignPatternService());
         DESIGN_PATTERN_SERVICE_MAP.put(STRATEGY, new StrategyDesignPatternService());
         DESIGN_PATTERN_SERVICE_MAP.put(DECORATOR, new DecoratorDesignPatternService());
+        DESIGN_PATTERN_SERVICE_MAP.put(FACTORY, new FactoryDesignPatternService());
     }
 
     @Override

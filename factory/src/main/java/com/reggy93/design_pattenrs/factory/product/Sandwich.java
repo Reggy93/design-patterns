@@ -1,7 +1,11 @@
 package com.reggy93.design_pattenrs.factory.product;
 
+import java.util.StringJoiner;
 import java.util.logging.Logger;
 
+/**
+ * Abstract class for representing factory created products - sandwich.
+ */
 public abstract class Sandwich {
 
     private static final Logger LOG = Logger.getLogger("SandwichLogger");
@@ -32,5 +36,14 @@ public abstract class Sandwich {
 
     public String getName() {
         return name;
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", Sandwich.class.getSimpleName() + "[", "]")
+                .add("name='" + name + "'")
+                .add("base='" + base + "'")
+                .add("sauce='" + sauce + "'")
+                .toString();
     }
 }

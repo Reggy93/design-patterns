@@ -8,6 +8,9 @@ import com.reggy93.design_pattenrs.factory.product.poland.PolishStyleVeggieSandw
 
 import java.util.logging.Logger;
 
+/**
+ * Factory for creating sandwiches in polish style.
+ */
 public class PolishStyleSandwichFactory extends SandwichFactory {
 
     private static final Logger LOG = Logger.getLogger("PolishStyleSandwichFactory logger");

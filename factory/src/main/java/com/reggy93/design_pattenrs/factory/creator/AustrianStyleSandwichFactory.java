@@ -8,6 +8,9 @@ import com.reggy93.design_pattenrs.factory.product.austria.AustrianStyleVeggieSa
 
 import java.util.logging.Logger;
 
+/**
+ * Factory for creating sandwiches in austrian style.
+ */
 public class AustrianStyleSandwichFactory extends SandwichFactory {
 
     private static final Logger LOG = Logger.getLogger("AustrianStyleSandwichFactory logger");
